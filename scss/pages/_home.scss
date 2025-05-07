@@ -96,7 +96,7 @@
             display: block!important;
             position: absolute;
             left: 82%;
-            width:5%;
+            width: 7%;
             padding: 5px 5px;
             font-size: 28px;
             cursor: pointer;
@@ -150,6 +150,25 @@
     }
     .header_main-container {
         width: 90%;
+        hr {
+            background: #8FCBD2;
+            height: 6px;
+            border:none;
+
+
+        }
+        .main-header-title {
+            h1 {
+                background-image: url(/image\ 6.png);
+                font-family: 'Avenir-Bold';
+                color: #8FCBD2;
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 110.00000000000001%;
+                padding-left: 20px;
+            } 
+        }
+       
     }
 
 }
