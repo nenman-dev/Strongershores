@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Avenir-Bold';
+    src: url('fonts/AvenirLTProHeavy.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Avenir-Regular';
+    src: url('fonts/AvenirLTProLight.otf') format('truetype');
+}
+@font-face {
+    font-family: 'Avenir-Medium';
+    src: url('fonts/AvenirLTProMedium.otf') format('truetype');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Avenir-Regular';
+}
