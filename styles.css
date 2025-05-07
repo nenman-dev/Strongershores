@@ -12,6 +12,11 @@
 .header .logo img {
   padding-left: 45px;
 }
+@media (max-width: 768px) {
+  .header .logo img {
+    padding-left: 20px;
+  }
+}
 .header .nav-bar {
   display: flex;
   flex-direction: row;
@@ -58,44 +63,54 @@
   width: 210px;
   padding-bottom: 10px;
 }
-.header .nav-bar .icon,
+.header .icon,
 .header .mobile-menu {
   display: none;
+}
+@media (max-width: 768px) {
+  .header .mobile-menu .logo {
+    width: 100%;
+    background-color: #222C57;
+    padding: 0;
+    margin: 0;
+  }
+  .header .mobile-menu img {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+  }
 }
 @media (max-width: 768px) {
   .header .nav-bar {
     display: none;
   }
-  .header .nav-bar a:not(.icon) {
-    display: none;
-  }
-  .header .nav-bar > .icon {
-    float: right;
-    display: block;
+  .header .icon {
+    display: block !important;
     position: absolute;
-    right: 20px;
+    left: 82%;
+    width: 5%;
+    padding: 5px 5px;
     font-size: 28px;
     cursor: pointer;
-    width: 50%;
+    background-color: #92CDD3;
     z-index: 1000;
-    color: white;
+    color: black;
   }
   .header .mobile-menu {
     display: none;
     flex-direction: column;
-    background-color: #000000;
+    background-color: white;
     position: fixed;
     top: 0px;
     right: 0px;
     width: 100vw;
     height: 100vh;
-    padding: 20px;
     box-shadow: 0 4px 6px rgb(0, 0, 0);
     z-index: 9999;
   }
   .header .mobile-menu a {
     text-decoration: none;
-    color: aliceblue;
+    color: #222C57;
     padding: 20px 0;
     font-size: 28px;
     text-align: center;
@@ -105,10 +120,14 @@
   }
   .header .close-icon {
     position: relative;
-    top: 20px;
+    width: 20%;
+    left: 260px;
+    bottom: 75px;
+    padding-right: 20px;
     text-align: right;
     font-size: 30px;
     color: white;
+    background-color: #222C57;
     cursor: pointer;
     z-index: 10000;
   }
@@ -120,7 +139,7 @@
   }
 }
 .header .header_main-container {
-  width: 100%;
+  width: 90%;
 }
 
 @font-face {
@@ -146,6 +165,8 @@ body {
 .site-wrapper {
   width: 100%;
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=styles.css.map */
