@@ -4,11 +4,11 @@
 }
 .header .header-content {
   display: flex;
-  width: 90%;
+  width: 85%;
   justify-content: space-between;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-left: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   align-items: center;
   margin: auto;
 }
@@ -62,43 +62,27 @@
 }
 .header .home-hero {
   background: #222C57;
-  width: 80%;
+  width: 100%;
   padding: 0;
-  margin: auto;
 }
 .header .home-hero .home-hero-content {
-  width: 100%;
+  width: 99%;
   margin: auto;
 }
-.header .home-hero .home-hero-content hr {
-  background: #8FCBD2;
-  width: 57%;
-  margin: 0;
-  padding: 7px;
-  border: none;
+.header .home-hero .home-hero-content .home-hero-title {
+  background-image: url(/02.png);
 }
 .header .home-hero .home-hero-content .home-hero-title {
-  font-family: Avenir-Bold;
   position: relative;
-  bottom: 15px;
-  height: 202px;
-  color: transparent;
   background-clip: text;
+  stroke: #FFFFFF;
+  stroke-width: 1px;
   font-size: 5.625rem;
   line-height: 5.3125rem;
-  font-weight: 800;
-  background-image: url("/img/02.png");
-  background-size: cover;
-  background-position: center;
+  font-weight: bolder;
+  background-image: url(/02.png);
   background-position: 0 0;
-  padding-top: 0;
-}
-.header .video {
-  position: relative;
-  left: 30%;
-  top: 20%;
-  padding: 0;
-  width: 60%;
+  animation: heroText 20s linear infinite;
 }
 
 @font-face {
@@ -112,10 +96,6 @@
 @font-face {
   font-family: "Avenir-Medium";
   src: url("fonts/AvenirLTProMedium.otf") format("truetype");
-}
-@font-face {
-  font-family: "Avenir-Main";
-  src: url("fonts/AvenirLTProBlackOblique.otf") format("truetype");
 }
 body {
   padding: 0;
@@ -132,4 +112,4 @@ body {
   box-sizing: border-box;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.scss.map */

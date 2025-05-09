@@ -4,11 +4,11 @@
 
     .header-content {
         display: flex;
-        width: 85%;
+        width: 90%;
         justify-content: space-between;
-        padding-top: 20px;
+        padding-top: 40px;
         padding-left: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 40px;
         align-items: center;
         margin: auto;
 
@@ -63,4 +63,50 @@
             }
         }
     }
-}
+
+    .home-hero {
+        background: #222C57;
+        width: 80%;
+        padding: 0;
+        margin: auto;
+
+        .home-hero-content {
+            width: 100%;
+            margin:auto;
+
+            hr {
+                background: #8FCBD2;
+                width:57%;
+                margin: 0;
+                padding: 7px;
+                border: none;
+
+            }
+
+            .home-hero-title  {
+                font-family: Avenir-Bold;
+                position: relative;
+                bottom: 15px;
+                height: 202px;
+                color: transparent;
+                background-clip: text;
+                font-size: 5.625rem;
+                line-height: 5.3125rem;
+                font-weight:800;
+                background-image: url('/img/02.png');
+                background-size: cover;
+                background-position: center;
+                background-position: 0 0;
+                padding-top: 0;
+            }
+        }
+    }  
+    .video {
+        position: relative;
+        left: 30%;
+        top: 20%;
+        padding: 0;
+        width:60%
+                
+    }
+}    
