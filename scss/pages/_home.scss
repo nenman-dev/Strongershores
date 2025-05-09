@@ -1,6 +1,7 @@
 .header {
     background: #222C57;
     width: 100%;
+    height: 830px;
 
     .header-content {
         display: flex;
@@ -98,15 +99,27 @@
                 background-position: center;
                 background-position: 0 0;
                 padding-top: 0;
+                margin-bottom: 0;
             }
         }
     }  
     .video {
         position: relative;
-        left: 30%;
-        top: 20%;
+        left: 33.7%;
         padding: 0;
-        width:60%
-                
+        width:60%         
     }
-}    
+}  
+.white-header {
+    width: 90%;
+    
+    .white-header-text {
+        width: 65%;
+        position: relative;
+        top: 120px;
+        font-size: 28px;
+        line-height: 1.5em;
+        left: 50px;
+        color: #222C57;
+    }
+}  
