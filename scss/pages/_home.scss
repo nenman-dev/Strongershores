@@ -22,6 +22,7 @@
             a {
                 color: white;
                 text-decoration: none;
+                font-size: 20px;
             }
             .dropdown {
                 position: relative;
@@ -56,8 +57,12 @@
                     align-items: left;
                 }     
             }
+            .dropdown-link {
+                background: #ecec2f;
+            }
             .dropdown:hover .dropdown-content {
                 display: block;
+                
             }
             .dropdown-link[aria-expanded="true"] + .dropdown-icon + .dropdown-content {
                 display: block;
@@ -105,9 +110,9 @@
     }  
     .video {
         position: relative;
-        left: 33.7%;
+        left: 27%;
         padding: 0;
-        width:60%         
+        width:60%;       
     }
 }  
 .white-header {
@@ -121,5 +126,107 @@
         line-height: 1.5em;
         left: 50px;
         color: #222C57;
+        font-family: Avenir-Regular;
     }
 }  
+@keyframes scroll {
+    0%{
+        transform:translateX(0);
+    } 
+    100%{
+        transform:translateX(-50%);
+    }
+}
+.logo-slider {
+    padding-top: 15%;
+    height: 100px;
+    margin:auto;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width:100%;
+
+    .slider {
+        animation: scroll 30s linear infinite;
+        display: flex;
+        gap: 50px;
+        margin: auto;
+        width: max-content;
+
+        .slide {
+            height: 100px;
+            width: 150px;
+
+            img {
+                width: 100%;
+                height: auto;
+                display:block;
+            }
+        }
+    }
+}
+.home-deepblue {
+    background-image: url('/img/deepblue.png');
+    background-color: #1B5AA5;
+    width: 100%;
+    height: 300px;
+
+    .deepblue-top {
+        width: 90%;
+        margin: auto;
+
+        h3 {
+            margin:auto;
+            padding-top: 40px;
+            text-align: center;
+            font-family: Avenir-Medium;
+            font-size: 36px;
+            color: white;
+        }
+        .mini-heading {
+            display: flex;
+            width: 50%;
+            margin: auto;
+
+            a {
+                color: white;
+                width: 50%;
+                justify-content: space-between;
+                text-align: center;
+                gap: 10px;
+                margin: auto;
+                text-decoration: none;
+                padding-top: 50px;
+                font-size: 18px;
+                font-family: Avenir-Medium;
+                padding-bottom: 25px;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 10%;
+                    top: 102px;
+                    width: 90%;
+                    height: 3px; 
+                    background-color: white;
+                    transform: translateX(-50%) scaleX(0); 
+                    transform-origin: center;
+                    transform-origin: center;
+                    transition: transform 0.3s ease;
+                }
+                &:hover::after {
+                    transform: scaleX(1);
+                }
+            
+            }
+        }
+
+        hr {
+            border-color:#FFFFFF1A;
+            border-width: 1px;
+            border-style: solid;
+        }
+    }
+}
