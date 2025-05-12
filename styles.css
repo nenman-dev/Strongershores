@@ -46,13 +46,11 @@
 }
 .header .header-content .nav-bar .dropdown-content li {
   list-style: none;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 .header .header-content .nav-bar .dropdown-content a {
   display: block;
   color: #222C57;
-  padding: 12px 16px;
+  padding: 6px;
   text-decoration: none;
   align-items: left;
 }
@@ -159,7 +157,7 @@
   background-image: url("/img/deepblue.png");
   background-color: #1B5AA5;
   width: 100%;
-  height: 300px;
+  padding-bottom: 50px;
 }
 .home-deepblue .deepblue-top {
   width: 90%;
@@ -212,6 +210,147 @@
   border-color: rgba(255, 255, 255, 0.1019607843);
   border-width: 1px;
   border-style: solid;
+}
+.home-deepblue .total-content {
+  width: 100%;
+}
+.home-deepblue .total-content .coastal-content {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap: 100px;
+  padding-top: 50px;
+}
+.home-deepblue .total-content .coastal-content .coastal-text {
+  width: 35%;
+  color: white;
+  position: relative;
+  left: 50px;
+  padding-top: 30px;
+  text-align: left;
+}
+.home-deepblue .total-content .coastal-content .coastal-text h2 {
+  font-family: Avenir-Bold;
+  line-height: 1.5em;
+}
+.home-deepblue .total-content .coastal-content .coastal-text p {
+  font-family: Avenir-Regular;
+  line-height: 1.5em;
+  font-size: 17px;
+  padding-bottom: 10px;
+}
+.home-deepblue .total-content .coastal-content .coastal-text button {
+  border-radius: 30px;
+  border: none;
+  height: 40px;
+  width: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: Avenir-Bold;
+  background: white;
+  color: #222C57;
+  font-size: 17px;
+}
+.home-deepblue .total-content .coastal-content .coastal-image {
+  width: 65%;
+  position: relative;
+  left: 30px;
+}
+.home-deepblue .total-content .coastal-content .coastal-image img {
+  width: 617px;
+  height: 392px;
+}
+.home-deepblue .total-content .fresh-content {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap: 100px;
+  padding-top: 50px;
+}
+.home-deepblue .total-content .fresh-content .fresh-text {
+  width: 35%;
+  color: white;
+  position: relative;
+  left: 50px;
+  padding-top: 30px;
+  text-align: left;
+}
+.home-deepblue .total-content .fresh-content .fresh-text h2 {
+  font-family: Avenir-Bold;
+  line-height: 1.5em;
+}
+.home-deepblue .total-content .fresh-content .fresh-text p {
+  font-family: Avenir-Regular;
+  line-height: 1.5em;
+  font-size: 17px;
+  padding-bottom: 10px;
+}
+.home-deepblue .total-content .fresh-content .fresh-text button {
+  border-radius: 30px;
+  border: none;
+  height: 40px;
+  width: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: Avenir-Bold;
+  background: white;
+  color: #222C57;
+  font-size: 17px;
+}
+.home-deepblue .total-content .fresh-content .fresh-image {
+  width: 65%;
+  position: relative;
+  left: 30px;
+}
+.home-deepblue .total-content .fresh-content .fresh-image img {
+  width: 617px;
+  height: 392px;
+}
+.home-deepblue .total-content .marine-content {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap: 100px;
+  padding-top: 50px;
+}
+.home-deepblue .total-content .marine-content .marine-text {
+  width: 35%;
+  color: white;
+  position: relative;
+  left: 50px;
+  padding-top: 30px;
+  text-align: left;
+}
+.home-deepblue .total-content .marine-content .marine-text h2 {
+  font-family: Avenir-Bold;
+  line-height: 1.5em;
+}
+.home-deepblue .total-content .marine-content .marine-text p {
+  font-family: Avenir-Regular;
+  line-height: 1.5em;
+  font-size: 17px;
+  padding-bottom: 10px;
+}
+.home-deepblue .total-content .marine-content .marine-text button {
+  border-radius: 30px;
+  border: none;
+  height: 40px;
+  width: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: Avenir-Bold;
+  background: white;
+  color: #222C57;
+  font-size: 17px;
+}
+.home-deepblue .total-content .marine-content .marine-image {
+  width: 65%;
+  position: relative;
+  left: 30px;
+}
+.home-deepblue .total-content .marine-content .marine-image img {
+  width: 617px;
+  height: 392px;
 }
 
 @font-face {
