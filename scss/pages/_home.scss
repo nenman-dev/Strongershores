@@ -228,12 +228,21 @@
         }
     }
     .total-content {
-        width: 100%;
+        display: flex;
     
+        .coastal-content,
+        .fresh-content,
+        .marine-content {
+            display: none; 
+        }
+        .coastal-content.active,
+        .fresh-content.active,
+        .marine-content.active {
+            display: flex; 
+        }
         .coastal-content{
             width: 80%;
             margin: auto;
-            display: flex;
             gap: 100px;
             padding-top: 50px;
 
@@ -281,7 +290,6 @@
         .fresh-content{
             width: 80%;
             margin: auto;
-            display: flex;
             gap: 100px;
             padding-top: 50px;
 
@@ -329,7 +337,6 @@
         .marine-content{
             width: 80%;
             margin: auto;
-            display: flex;
             gap: 100px;
             padding-top: 50px;
 
