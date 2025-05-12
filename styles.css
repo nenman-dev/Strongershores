@@ -360,6 +360,70 @@
   height: 392px;
 }
 
+.home-white {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.home-white .white-container {
+  width: 85%;
+  margin: auto;
+}
+.home-white .white-container .white-text {
+  font-family: Avenir-Bold;
+  font-size: 40px;
+  color: #222C57;
+}
+.home-white .white-container .white-sections {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 30px;
+}
+.home-white .white-container .white-sections .volunteer {
+  background-image: url(/img/opportunity.png);
+}
+.home-white .white-container .white-sections .sponsorship {
+  background-image: url(/img/sponsorship.png);
+}
+.home-white .white-container .white-sections .fundraising {
+  background-image: url(/img/fundraising.png);
+}
+.home-white .white-container .white-sections .volunteer,
+.home-white .white-container .white-sections .sponsorship,
+.home-white .white-container .white-sections .fundraising {
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
+  color: white;
+  width: 380px;
+  height: 431px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.home-white .white-container .white-sections .volunteer,
+.home-white .white-container .white-sections .sponsorship,
+.home-white .white-container .white-sections .fundraising, .home-white .white-container .white-sections .text {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+.home-white .white-container .white-sections .volunteer button,
+.home-white .white-container .white-sections .sponsorship button,
+.home-white .white-container .white-sections .fundraising button {
+  border-radius: 30px;
+  border: none;
+  height: 40px;
+  width: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: Avenir-Bold;
+  background: white;
+  color: #222C57;
+  font-size: 17px;
+}
+
 @font-face {
   font-family: "Avenir-Bold";
   src: url("fonts/AvenirLTProHeavy.otf") format("truetype");

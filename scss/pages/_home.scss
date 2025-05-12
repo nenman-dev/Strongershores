@@ -383,3 +383,74 @@
         }
     }
 }
+.home-white {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    .white-container {
+        width: 85%;
+        margin:auto;
+
+        .white-text {
+            font-family: Avenir-Bold;
+            font-size: 40px;
+            color: #222C57;
+        }
+
+        .white-sections {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            gap: 30px;
+
+            .volunteer {
+                background-image: url(/img/opportunity.png);
+            }
+            .sponsorship {
+                background-image: url(/img/sponsorship.png);
+            }
+            .fundraising {
+                background-image: url(/img/fundraising.png);
+            }
+            .volunteer,
+            .sponsorship,
+            .fundraising {
+                background-size: cover;
+                background-position: center;
+                background-color: #00000099;
+                background-blend-mode: darken;
+                color:white;
+                width:380px;
+                height: 431px;
+                justify-content: center;
+                align-items: center;
+                text-align: center; 
+                
+            }
+            .volunteer,
+            .sponsorship,
+            .fundraising, .text {
+                font-size: 30px;
+                padding-bottom: 30px;
+            }
+            .volunteer,
+            .sponsorship,
+            .fundraising {
+                button {
+                    border-radius: 30px;
+                    border: none;
+                    height: 40px;
+                    width: 50%;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    font-family: Avenir-Bold;
+                    background: white;
+                    color: #222C57;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+}

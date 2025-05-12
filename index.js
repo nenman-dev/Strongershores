@@ -25,7 +25,7 @@ document.addEventListener('click', function (e) {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const tabContainer = document.querySelector('.tab-container'); // Optional wrapper
+    const tabContainer = document.querySelector('.tab-container');
     const buttons = document.querySelectorAll('.mini-heading .btn');
     const contents = document.querySelectorAll('.total-content > div');
 
