@@ -224,102 +224,22 @@
 .home-deepblue .total-content .marine-content.active {
   display: flex;
 }
-.home-deepblue .total-content .coastal-content {
-  width: 80%;
-  margin: auto;
-  gap: 100px;
-  padding-top: 50px;
-}
-.home-deepblue .total-content .coastal-content .coastal-text {
-  width: 35%;
-  color: white;
-  position: relative;
-  left: 50px;
-  padding-top: 30px;
-  text-align: left;
-}
-.home-deepblue .total-content .coastal-content .coastal-text h2 {
-  font-family: Avenir-Bold;
-  line-height: 1.5em;
-}
-.home-deepblue .total-content .coastal-content .coastal-text p {
-  font-family: Avenir-Regular;
-  line-height: 1.5em;
-  font-size: 17px;
-  padding-bottom: 10px;
-}
-.home-deepblue .total-content .coastal-content .coastal-text button {
-  border-radius: 30px;
-  border: none;
-  height: 40px;
-  width: 50%;
-  padding-left: 5px;
-  padding-right: 5px;
-  font-family: Avenir-Bold;
-  background: white;
-  color: #222C57;
-  font-size: 17px;
-}
-.home-deepblue .total-content .coastal-content .coastal-image {
-  width: 65%;
-  position: relative;
-  left: 30px;
-}
-.home-deepblue .total-content .coastal-content .coastal-image img {
-  width: 617px;
-  height: 392px;
-}
-.home-deepblue .total-content .fresh-content {
-  width: 80%;
-  margin: auto;
-  gap: 100px;
-  padding-top: 50px;
-}
-.home-deepblue .total-content .fresh-content .fresh-text {
-  width: 35%;
-  color: white;
-  position: relative;
-  left: 50px;
-  padding-top: 30px;
-  text-align: left;
-}
-.home-deepblue .total-content .fresh-content .fresh-text h2 {
-  font-family: Avenir-Bold;
-  line-height: 1.5em;
-}
-.home-deepblue .total-content .fresh-content .fresh-text p {
-  font-family: Avenir-Regular;
-  line-height: 1.5em;
-  font-size: 17px;
-  padding-bottom: 10px;
-}
-.home-deepblue .total-content .fresh-content .fresh-text button {
-  border-radius: 30px;
-  border: none;
-  height: 40px;
-  width: 50%;
-  padding-left: 5px;
-  padding-right: 5px;
-  font-family: Avenir-Bold;
-  background: white;
-  color: #222C57;
-  font-size: 17px;
-}
-.home-deepblue .total-content .fresh-content .fresh-image {
-  width: 65%;
-  position: relative;
-  left: 30px;
-}
-.home-deepblue .total-content .fresh-content .fresh-image img {
-  width: 617px;
-  height: 392px;
-}
+.home-deepblue .total-content .coastal-content,
+.home-deepblue .total-content .fresh-content,
 .home-deepblue .total-content .marine-content {
   width: 80%;
   margin: auto;
   gap: 100px;
   padding-top: 50px;
 }
+.home-deepblue .total-content .coastal-content .coastal-text,
+.home-deepblue .total-content .coastal-content .fresh-text,
+.home-deepblue .total-content .coastal-content .marine-text,
+.home-deepblue .total-content .fresh-content .coastal-text,
+.home-deepblue .total-content .fresh-content .fresh-text,
+.home-deepblue .total-content .fresh-content .marine-text,
+.home-deepblue .total-content .marine-content .coastal-text,
+.home-deepblue .total-content .marine-content .fresh-text,
 .home-deepblue .total-content .marine-content .marine-text {
   width: 35%;
   color: white;
@@ -328,20 +248,122 @@
   padding-top: 30px;
   text-align: left;
 }
+.home-deepblue .total-content .coastal-content .coastal-text .coastal-text,
+.home-deepblue .total-content .coastal-content .coastal-text .fresh-text,
+.home-deepblue .total-content .coastal-content .coastal-text .marine-text, .home-deepblue .total-content .coastal-content .coastal-text h2,
+.home-deepblue .total-content .coastal-content .fresh-text .coastal-text,
+.home-deepblue .total-content .coastal-content .fresh-text .fresh-text,
+.home-deepblue .total-content .coastal-content .fresh-text .marine-text,
+.home-deepblue .total-content .coastal-content .fresh-text h2,
+.home-deepblue .total-content .coastal-content .marine-text .coastal-text,
+.home-deepblue .total-content .coastal-content .marine-text .fresh-text,
+.home-deepblue .total-content .coastal-content .marine-text .marine-text,
+.home-deepblue .total-content .coastal-content .marine-text h2,
+.home-deepblue .total-content .fresh-content .coastal-text .coastal-text,
+.home-deepblue .total-content .fresh-content .coastal-text .fresh-text,
+.home-deepblue .total-content .fresh-content .coastal-text .marine-text,
+.home-deepblue .total-content .fresh-content .coastal-text h2,
+.home-deepblue .total-content .fresh-content .fresh-text .coastal-text,
+.home-deepblue .total-content .fresh-content .fresh-text .fresh-text,
+.home-deepblue .total-content .fresh-content .fresh-text .marine-text,
+.home-deepblue .total-content .fresh-content .fresh-text h2,
+.home-deepblue .total-content .fresh-content .marine-text .coastal-text,
+.home-deepblue .total-content .fresh-content .marine-text .fresh-text,
+.home-deepblue .total-content .fresh-content .marine-text .marine-text,
+.home-deepblue .total-content .fresh-content .marine-text h2,
+.home-deepblue .total-content .marine-content .coastal-text .coastal-text,
+.home-deepblue .total-content .marine-content .coastal-text .fresh-text,
+.home-deepblue .total-content .marine-content .coastal-text .marine-text,
+.home-deepblue .total-content .marine-content .coastal-text h2,
+.home-deepblue .total-content .marine-content .fresh-text .coastal-text,
+.home-deepblue .total-content .marine-content .fresh-text .fresh-text,
+.home-deepblue .total-content .marine-content .fresh-text .marine-text,
+.home-deepblue .total-content .marine-content .fresh-text h2,
+.home-deepblue .total-content .marine-content .marine-text .coastal-text,
+.home-deepblue .total-content .marine-content .marine-text .fresh-text,
+.home-deepblue .total-content .marine-content .marine-text .marine-text,
 .home-deepblue .total-content .marine-content .marine-text h2 {
   font-family: Avenir-Bold;
   line-height: 1.5em;
 }
+.home-deepblue .total-content .coastal-content .coastal-text .coastal-text,
+.home-deepblue .total-content .coastal-content .coastal-text .fresh-text,
+.home-deepblue .total-content .coastal-content .coastal-text .marine-text, .home-deepblue .total-content .coastal-content .coastal-text p,
+.home-deepblue .total-content .coastal-content .fresh-text .coastal-text,
+.home-deepblue .total-content .coastal-content .fresh-text .fresh-text,
+.home-deepblue .total-content .coastal-content .fresh-text .marine-text,
+.home-deepblue .total-content .coastal-content .fresh-text p,
+.home-deepblue .total-content .coastal-content .marine-text .coastal-text,
+.home-deepblue .total-content .coastal-content .marine-text .fresh-text,
+.home-deepblue .total-content .coastal-content .marine-text .marine-text,
+.home-deepblue .total-content .coastal-content .marine-text p,
+.home-deepblue .total-content .fresh-content .coastal-text .coastal-text,
+.home-deepblue .total-content .fresh-content .coastal-text .fresh-text,
+.home-deepblue .total-content .fresh-content .coastal-text .marine-text,
+.home-deepblue .total-content .fresh-content .coastal-text p,
+.home-deepblue .total-content .fresh-content .fresh-text .coastal-text,
+.home-deepblue .total-content .fresh-content .fresh-text .fresh-text,
+.home-deepblue .total-content .fresh-content .fresh-text .marine-text,
+.home-deepblue .total-content .fresh-content .fresh-text p,
+.home-deepblue .total-content .fresh-content .marine-text .coastal-text,
+.home-deepblue .total-content .fresh-content .marine-text .fresh-text,
+.home-deepblue .total-content .fresh-content .marine-text .marine-text,
+.home-deepblue .total-content .fresh-content .marine-text p,
+.home-deepblue .total-content .marine-content .coastal-text .coastal-text,
+.home-deepblue .total-content .marine-content .coastal-text .fresh-text,
+.home-deepblue .total-content .marine-content .coastal-text .marine-text,
+.home-deepblue .total-content .marine-content .coastal-text p,
+.home-deepblue .total-content .marine-content .fresh-text .coastal-text,
+.home-deepblue .total-content .marine-content .fresh-text .fresh-text,
+.home-deepblue .total-content .marine-content .fresh-text .marine-text,
+.home-deepblue .total-content .marine-content .fresh-text p,
+.home-deepblue .total-content .marine-content .marine-text .coastal-text,
+.home-deepblue .total-content .marine-content .marine-text .fresh-text,
+.home-deepblue .total-content .marine-content .marine-text .marine-text,
 .home-deepblue .total-content .marine-content .marine-text p {
   font-family: Avenir-Regular;
   line-height: 1.5em;
-  font-size: 17px;
-  padding-bottom: 10px;
+  font-size: 18px;
+  padding-bottom: 15px;
 }
+.home-deepblue .total-content .coastal-content .coastal-text .coastal-text,
+.home-deepblue .total-content .coastal-content .coastal-text .fresh-text,
+.home-deepblue .total-content .coastal-content .coastal-text .marine-text, .home-deepblue .total-content .coastal-content .coastal-text button,
+.home-deepblue .total-content .coastal-content .fresh-text .coastal-text,
+.home-deepblue .total-content .coastal-content .fresh-text .fresh-text,
+.home-deepblue .total-content .coastal-content .fresh-text .marine-text,
+.home-deepblue .total-content .coastal-content .fresh-text button,
+.home-deepblue .total-content .coastal-content .marine-text .coastal-text,
+.home-deepblue .total-content .coastal-content .marine-text .fresh-text,
+.home-deepblue .total-content .coastal-content .marine-text .marine-text,
+.home-deepblue .total-content .coastal-content .marine-text button,
+.home-deepblue .total-content .fresh-content .coastal-text .coastal-text,
+.home-deepblue .total-content .fresh-content .coastal-text .fresh-text,
+.home-deepblue .total-content .fresh-content .coastal-text .marine-text,
+.home-deepblue .total-content .fresh-content .coastal-text button,
+.home-deepblue .total-content .fresh-content .fresh-text .coastal-text,
+.home-deepblue .total-content .fresh-content .fresh-text .fresh-text,
+.home-deepblue .total-content .fresh-content .fresh-text .marine-text,
+.home-deepblue .total-content .fresh-content .fresh-text button,
+.home-deepblue .total-content .fresh-content .marine-text .coastal-text,
+.home-deepblue .total-content .fresh-content .marine-text .fresh-text,
+.home-deepblue .total-content .fresh-content .marine-text .marine-text,
+.home-deepblue .total-content .fresh-content .marine-text button,
+.home-deepblue .total-content .marine-content .coastal-text .coastal-text,
+.home-deepblue .total-content .marine-content .coastal-text .fresh-text,
+.home-deepblue .total-content .marine-content .coastal-text .marine-text,
+.home-deepblue .total-content .marine-content .coastal-text button,
+.home-deepblue .total-content .marine-content .fresh-text .coastal-text,
+.home-deepblue .total-content .marine-content .fresh-text .fresh-text,
+.home-deepblue .total-content .marine-content .fresh-text .marine-text,
+.home-deepblue .total-content .marine-content .fresh-text button,
+.home-deepblue .total-content .marine-content .marine-text .coastal-text,
+.home-deepblue .total-content .marine-content .marine-text .fresh-text,
+.home-deepblue .total-content .marine-content .marine-text .marine-text,
 .home-deepblue .total-content .marine-content .marine-text button {
   border-radius: 30px;
   border: none;
-  height: 40px;
+  height: 45px;
   width: 50%;
   padding-left: 5px;
   padding-right: 5px;
@@ -349,12 +371,29 @@
   background: white;
   color: #222C57;
   font-size: 17px;
+  cursor: pointer;
 }
+.home-deepblue .total-content .coastal-content .coastal-image,
+.home-deepblue .total-content .coastal-content .fresh-image,
+.home-deepblue .total-content .coastal-content .marine-image,
+.home-deepblue .total-content .fresh-content .coastal-image,
+.home-deepblue .total-content .fresh-content .fresh-image,
+.home-deepblue .total-content .fresh-content .marine-image,
+.home-deepblue .total-content .marine-content .coastal-image,
+.home-deepblue .total-content .marine-content .fresh-image,
 .home-deepblue .total-content .marine-content .marine-image {
   width: 65%;
   position: relative;
   left: 30px;
 }
+.home-deepblue .total-content .coastal-content .coastal-image img,
+.home-deepblue .total-content .coastal-content .fresh-image img,
+.home-deepblue .total-content .coastal-content .marine-image img,
+.home-deepblue .total-content .fresh-content .coastal-image img,
+.home-deepblue .total-content .fresh-content .fresh-image img,
+.home-deepblue .total-content .fresh-content .marine-image img,
+.home-deepblue .total-content .marine-content .coastal-image img,
+.home-deepblue .total-content .marine-content .fresh-image img,
 .home-deepblue .total-content .marine-content .marine-image img {
   width: 617px;
   height: 392px;
@@ -380,15 +419,6 @@
   justify-content: space-between;
   gap: 30px;
 }
-.home-white .white-container .white-sections .volunteer {
-  background-image: url(/img/opportunity.png);
-}
-.home-white .white-container .white-sections .sponsorship {
-  background-image: url(/img/sponsorship.png);
-}
-.home-white .white-container .white-sections .fundraising {
-  background-image: url(/img/fundraising.png);
-}
 .home-white .white-container .white-sections .volunteer,
 .home-white .white-container .white-sections .sponsorship,
 .home-white .white-container .white-sections .fundraising {
@@ -397,31 +427,135 @@
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: darken;
   color: white;
-  width: 380px;
-  height: 431px;
+  width: 385px;
+  margin: auto;
+  line-height: 1.5em;
+  height: 367px;
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.home-white .white-container .white-sections .volunteer *,
+.home-white .white-container .white-sections .sponsorship *,
+.home-white .white-container .white-sections .fundraising * {
+  position: relative;
+  z-index: 1;
+}
+.home-white .white-container .white-sections .volunteer::before,
+.home-white .white-container .white-sections .sponsorship::before,
+.home-white .white-container .white-sections .fundraising::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+.home-white .white-container .white-sections .volunteer:hover::before,
+.home-white .white-container .white-sections .sponsorship:hover::before,
+.home-white .white-container .white-sections .fundraising:hover::before {
+  transform: scale(1.1);
+}
+.home-white .white-container .white-sections .volunteer::before {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/opportunity.png);
+}
+.home-white .white-container .white-sections .sponsorship::before {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/sponsorship.png);
+}
+.home-white .white-container .white-sections .fundraising::before {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/fundraising.png);
 }
 .home-white .white-container .white-sections .volunteer,
 .home-white .white-container .white-sections .sponsorship,
 .home-white .white-container .white-sections .fundraising, .home-white .white-container .white-sections .text {
-  font-size: 30px;
-  padding-bottom: 30px;
+  font-size: 37px;
+  padding-top: 6%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .home-white .white-container .white-sections .volunteer button,
 .home-white .white-container .white-sections .sponsorship button,
 .home-white .white-container .white-sections .fundraising button {
-  border-radius: 30px;
   border: none;
   height: 40px;
   width: 50%;
   padding-left: 5px;
   padding-right: 5px;
   font-family: Avenir-Bold;
-  background: white;
-  color: #222C57;
+  background: #1B5AA5;
+  color: white;
   font-size: 17px;
+  cursor: pointer;
+  position: relative;
+  height: 50px;
+  width: 50%;
+  top: 12.5%;
+  left: 25%;
+}
+
+.home-events {
+  width: 100%;
+  padding-bottom: 30px;
+}
+.home-events .events {
+  width: 85%;
+  margin: auto;
+}
+.home-events .events .events-header {
+  font-family: Avenir-Bold;
+  font-size: 40px;
+  color: #222C57;
+}
+.home-events .events .events-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 30px;
+}
+.home-events .events .events-section .events-content {
+  background-color: #F3F7FA;
+  width: 387px;
+  height: 300px;
+}
+.home-events .events .events-section .events-content .events-schedule {
+  background: #92CDD3;
+  color: #222C57;
+  width: 55px;
+  height: 63px;
+  text-align: center;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  position: relative;
+  left: 25px;
+}
+.home-events .events .events-section .events-content .events-schedule .event-month {
+  font-family: Avenir-Bold;
+  font-size: 14px;
+}
+.home-events .events .events-section .events-content .events-schedule .event-date {
+  font-family: Avenir-Bold;
+  font-size: 25px;
+  font-weight: 900;
+}
+.home-events .events .events-section .events-content .event-card-section {
+  padding: 30px;
+}
+.home-events .events .events-section .events-content .event-card-section .event-card-title {
+  text-decoration: none;
+  font-size: 24px;
+  font-family: Avenir-Bold;
+  color: #222C57;
+}
+.home-events .events .events-section .events-content .event-card-section .event-text {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Avenir-Regular;
+  color: #222C57;
 }
 
 @font-face {
