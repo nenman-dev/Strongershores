@@ -690,6 +690,51 @@
   border: none;
 }
 
+.footer {
+  width: 100%;
+  background: #222C57;
+}
+.footer .footer-section {
+  width: 70%;
+  display: flex;
+  padding-left: 40px;
+  padding-top: 50px;
+  justify-content: space-between;
+  gap: 40px;
+  color: white;
+}
+.footer .footer-section .logo img {
+  width: 58px;
+  height: 58px;
+}
+.footer .footer-section .first {
+  width: 10%;
+}
+.footer .footer-section .first a {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  line-height: 2em;
+}
+.footer .footer-section .second {
+  width: 11%;
+}
+.footer .footer-section .second a {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  line-height: 2em;
+}
+.footer .footer-section .third {
+  width: 30%;
+}
+.footer .footer-section .third a {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  line-height: 2em;
+}
+
 @font-face {
   font-family: "Avenir-Bold";
   src: url("fonts/AvenirLTProHeavy.otf") format("truetype");
