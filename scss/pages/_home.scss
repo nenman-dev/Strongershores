@@ -204,7 +204,7 @@
                 &::after {
                     content: '';
                     position: absolute;
-                    left: 10%;
+                    left: 50%;
                     top: 102px;
                     width: 90%;
                     height: 3px; 
@@ -214,13 +214,13 @@
                     transform-origin: center;
                     transition: transform 0.3s ease;
                 }
-                &:hover::after {
-                    transform: scaleX(1);
+        
+                &:hover::after,
+                &.active::after {
+                    transform: translateX(-50%) scaleX(1);
                 }
-            
             }
         }
-
         hr {
             border-color:#FFFFFF1A;
             border-width: 1px;
@@ -414,12 +414,25 @@
     .events {
         width: 85%;
         margin: auto;
+        padding-bottom: 50px;
+        
+        .events-header-content {
+            display: flex;
+            justify-content: space-between;
 
-        .events-header {
-            font-family: Avenir-Bold;
-            font-size: 40px;
-            color: #222C57;
-        }    
+            .events-header {
+                font-family: Avenir-Bold;
+                font-size: 40px;
+                color: #222C57;
+            }   
+            .events-news {
+                color: #222C57;
+                text-decoration: none;
+                padding-top: 55px;
+                font-size: 18px;
+                font-family: Avenir-Medium;
+            }
+        } 
         .events-section {
             display: flex;
             width: 100%;
@@ -435,7 +448,7 @@
                     background: #92CDD3;
                     color: #222C57;
                     width: 55px;
-                    height: 63px;
+                    height: 70px;
                     text-align: center;
                     border-bottom-left-radius: 7px;
                     border-bottom-right-radius: 7px;
@@ -453,11 +466,11 @@
                     }
                 }
                 .event-card-section  {
-                    padding:30px;
+                    padding:25px;
 
                     .event-card-title  {
                         text-decoration: none;
-                        font-size: 24px;
+                        font-size: 20px;
                         font-family: Avenir-Bold;
                         color:  #222C57;
                     }
@@ -467,12 +480,139 @@
                         font-family: Avenir-Regular;
                         color:  #222C57;
                     }
-                }
+                    .arrow-link {
+                        background-color: #222C57;
+                        width: 40px;
+                        position: relative;
+                        left: 95%;
+                        top: 5px;
+                        height: 40px;
+                        text-align: center;
+                        align-content: space-around;
+
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            justify-content: center;
+                            
+                        }
+                    }
+                }                          
             }
         }
     }
-        
-    
+}
+.home-latest {
+    width: 100%;
+    background-color: #C3E1E9;
 
+    .latest-section {
+        width: 85%;
+        margin: auto;
 
+        .latest-header-content {
+            display: flex;
+            justify-content: space-between;
+
+             .latest-header {
+                padding-top: 40px;
+                font-family: Avenir-Bold;
+                font-size: 40px;
+                color: #222C57;
+            }
+            .latest-news {
+                color: #222C57;
+                text-decoration: none;
+                padding-top: 8%;
+                font-size: 18px;
+                font-family: Avenir-Medium;
+            }
+        }
+        .latest-top-container {
+           width: 85%;
+           display: flex;
+           flex-direction: row;
+           gap: 30px;
+           margin: 0;
+           padding: 0;
+           
+           .funding-img,
+           .flooding-img,
+           .action-img {
+                width: 370px;
+                height: 244px;
+           }
+           .funding-text {
+                background: white;
+                width: 30%;
+                height: 5%;
+                text-align: center;
+                justify-items: center;
+                padding: 5px;
+                position: relative;
+                color: #222C57;
+                bottom: 52px;
+                left: 25px;
+           }
+        }
+        .latest-content {
+            background: white;
+            position: relative;
+            bottom: 76px;
+            padding: 25px;
+            
+            .latest-content-header{
+                color: #222C57;
+                font-size: 24px;
+                font-family: Avenir-Bold;
+            }
+            .header-text {
+                color: #222C57;
+                font-size: 16px;
+                font-family: Avenir-Regular;
+            }
+            .arrow-link {
+                background-color: #222C57;
+                width: 40px;
+                position: relative;
+                left: 95.5%;
+                top: 25px;
+                height: 40px;
+                text-align: center;
+                align-content: space-around;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    justify-content: center;
+                    
+                }
+            }
+        }
+
+    }
+}
+.top-footer {
+    width: 100%;
+    background:#20294F ;
+    padding-top: 0;
+   
+    .top-footer-section .text {
+        width: 70%;
+        color: white;
+        font-size: 30px;
+        margin: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      
+
+        button{
+            font-size: 16px;
+            padding: 10px;
+            background : #92CDD3;
+            color: #222C57;
+            font-family: Avenir-Bold;
+            border: none;
+        }
+    }
 }
