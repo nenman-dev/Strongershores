@@ -17,12 +17,34 @@
                 <div class="nav-bar">
                     <a href="about.html">About Us</a>
                     <div class="dropdown">
-                        <a href="habitats.html" class="dropdown-link" aria-expanded="false">Habitats</a><span class="dropdown-icon">&#9662;</span>
+                        <a href="habitats.html" class="dropdown-link" aria-expanded="false">Habitats</a><span class="dropdown-icon">&#11167;</span>
                         <ul class="dropdown-content">
                             <li><a href="#">Coral Reefs</a></li>
                             <li><a href="#">Seagrass</a></li>
                             <li><a href="#">Kelp Forest</a></li>
                         </ul>
+                    </div>
+                </div>
+                 <a href="#" class ="icon" onclick="myFunction(event)">
+                    <i class= "fa fa-bars"></i>
+                </a>
+                <div class = "mobile-menu" id="mobileMenu">
+                    <div class=" logo">
+                        <img src="./img/logo.png" alt="Logo">
+                    </div>
+                    <span class="close-icon" onclick="closeMenu()">
+                        <i class="fas fa-xmark"></i>
+                    </span>
+                    <div class="menu-bar">
+                        <a href="about.html">About Us</a>
+                        <div class="dropdown">
+                            <a href="habitats.html" class="dropdown-link" aria-expanded="false">Habitats</a><span class="dropdown-icon">&#11166;</span>
+                            <ul class="dropdown-content">
+                                <li><a href="#">Coral Reefs</a></li>
+                                <li><a href="#">Seagrass</a></li>
+                                <li><a href="#">Kelp Forest</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -40,8 +62,6 @@
             </div>
             <div class="video">
                 <iframe 
-                    width="978" 
-                    height="524" 
                     src="https://www.youtube.com/embed/sw14QjrTm8o?si=_z2r8v-Ect2J2uSR&controls=0&modestbranding=1&rel=0&mute=0"
                     title="YouTube video player" 
                     frameborder="0"
@@ -107,7 +127,7 @@
                 <div class="coastal-content" id="coastal">
                     <div class="coastal-text">
                         <h2>Coastal habitats refers to the region where the land meets the sea</h2>
-                        <p> Showcase your solution to amplify the reach of your business and connect with other businesses, investors and local autorities to develp new business opportunites, business and connect</p>
+                        <p> Showcase your solution to amplify the reach of your business and connect with other businesses, investors and local autorities to develope new business opportunites, business and connect</p>
                         <button> Find out more 🡢 </button>
                     </div>
                     <div class="coastal-image">
@@ -164,7 +184,7 @@
                 <div class="events-section">
                     <div class="events-content">
                         <div class="events-schedule">
-                            <span class="event-month">MAY</span>
+                            <span class="event-month">MAY</span><br>
                             <span class="event-date">22</span>
                         </div>
                         <div class="event-card-section">
@@ -256,7 +276,12 @@
        </div>
        <div class="top-footer">
             <div class="top-footer-section">
-                <p class="text">Get updates about our work and events near you <button>Subscribe 🡢 </button></p>
+                <p class="text">Get updates about our work and events near you <button >Subscribe 🡢 </button></p>
+                <form class="contact-form" action="#" method="POST">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </form>
+                <button class="one">Subscribe 🡢 </button>
             </div>
        </div>
        <div class="footer">
