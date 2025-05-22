@@ -9,7 +9,7 @@ document.querySelectorAll('.dropdown-link').forEach(link => {
           otherLink.setAttribute('aria-expanded', 'false');
            const otherContent = otherLink.nextElementSibling;
            if (otherContent && otherContent.classList.contains('dropdown-content')) {
-                otherContent.classList.remove('show');
+            otherContent.classList.remove('show');
            }
         }
       });
@@ -30,6 +30,17 @@ document.addEventListener('click', function (e) {
         }
     });
 });
+
+function openMobileMenu() {
+  document.getElementById("mobileMenu").classList.add("active");
+  document.body.classList.add("menu-open");
+}
+
+function closeMobileMenu() {
+  document.getElementById("mobileMenu").classList.remove("active");
+  document.body.classList.remove("menu-open");
+}
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const tabContainer = document.querySelector('.tab-container');
