@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+   <div class="site-wrapper">
+        <div class="about-header">
+            <div class="about-header-content">
+                <div class="logo">
+                    <img src ="img/logo.png" alt="Strongershores logo">
+                </div> 
+                <div class="nav-bar">
+                    <a href="about.html">About Us</a>
+                    <div class="dropdown">
+                        <a href="habitats.html" class="dropdown-link" aria-expanded="false">Habitats</a><span class="dropdown-icon">&#11167;</span>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Coral Reefs</a></li>
+                            <li><a href="#">Seagrass</a></li>
+                            <li><a href="#">Kelp Forest</a></li>
+                        </ul>
+                    </div>
+                </div>
+                 <a href="#" class ="icon" id="menuToggle" onclick="myFunction(event)">
+                    <i class= "fa fa-bars"></i>
+                </a>
+                <div class = "mobile-menu" id="mobileMenu">
+                    <div class=" logo">
+                        <img src="./img/logo.png" alt="Logo">
+                    </div>
+                    <span class="close-icon" onclick="closeMenu()">
+                        <i class="fas fa-xmark"></i>
+                    </span>
+                    <div class="menu-bar">
+                        <a href="about.html">About Us</a>
+                        <div class="dropdown">
+                            <a href="habitats.html" class="dropdown-link" aria-expanded="false">Habitats</a><span class="dropdown-icon">&#11166;</span>
+                            <ul class="dropdown-content">
+                                <li><a href="#">Coral Reefs</a></li>
+                                <li><a href="#">Seagrass</a></li>
+                                <li><a href="#">Kelp Forest</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+   </div>   
+   
+   
+
+
+
+
+
+
+
+
+
+   <script src="index.js"></script>
+</body>
+</html>
