@@ -1,10 +1,12 @@
 .about-header {
-    background: #222C57;
     width: 100%;
-    height: 830px;
+    height: auto;
     background-image: url(/img/about-.png);
-    @media (max-width: 768px) {
-        height: 480px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    @media (max-width: 1024px) {
+        height: 768px;
     }
 
     .about-header-content {
@@ -13,10 +15,10 @@
         justify-content: space-between;
         padding-top: 40px;
         padding-left: 20px;
-        padding-bottom: 50px;
+        padding-bottom: 10px;
         align-items: center;
         margin: auto;
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
         padding-bottom:10px;
     }
         .logo {
@@ -28,7 +30,9 @@
             text-align: center;
             display: flex;
             gap: 25px;
-               
+            @media (max-width: 768px)  {
+                display: none;
+            } 
             a {
                 color: white;
                 text-decoration: none;
@@ -79,9 +83,6 @@
         }
 
     @media (max-width: 768px) { 
-        .header-content .nav-bar {
-            display:none;
-        }
         .icon {
             display: block;
             font-size: 28px;
@@ -107,7 +108,7 @@
             height: 100vh;
 
             a {
-                display: block;
+                display: none;
                 color:#222C57;
                 padding: 6px;
                 font-size: 20px;
@@ -199,4 +200,70 @@
             }
         }
     }
+    hr {
+        width: 100%;
+        position: relative;
+        border-color: #FFFFFF26;
+        border-width: 0.5px;
+        border-style: solid;
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+    .about-hero {
+        
+        width: 80%;
+        padding-top: 70px;
+        margin: auto;
+        @media (max-width: 768px) {
+            padding-top: 50px;
+        }
+        .about-hero-content {
+            width: 90%;
+            margin:auto;
+
+            hr {
+                display: block;
+                background: #FFFFFF;
+                width: 43%;
+                margin: 0;
+                padding: 7px;
+                border: none;
+                @media (max-width: 768px) {
+                    width:57%;
+                    margin: 0;
+                    padding: 4px;
+                    border: none;
+                    position: relative;
+                    right: 20px;
+                    height: auto;
+                }
+            }
+
+            .about-hero-title  {
+                font-family: Avenir-Bold;
+                position: relative;
+                bottom: 15px;
+                height: 202px;
+                color: #FFFFFF;
+                background-clip: text;
+                font-size: 3.625rem;
+                line-height: 4rem;
+                font-weight: 800;
+                padding-top: 0;
+                margin-bottom: 0;
+                padding-bottom: 20px;
+                @media (max-width: 1024px) {
+                    bottom: 35px;
+                    right: 10px;
+                    font-size: 3rem;
+                    line-height: 3.5rem;
+                    padding-top: 40px;
+                    margin-bottom: 0;  
+                }
+            }
+        }
+    }  
 }
+
+ 
