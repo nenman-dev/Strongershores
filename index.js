@@ -126,3 +126,31 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+
+document.querySelectorAll('.open-modal').forEach(arrow => {
+    arrow.addEventListener('click', function(e) {
+      e.preventDefault();
+      const modal = document.getElementById('profileModal');
+      document.getElementById('modalName').innerText = this.dataset.name;
+      document.getElementById('modalRole').innerText = this.dataset.role;
+      document.getElementById('modalDescription').innerText = this.dataset.description;
+      document.getElementById('modalImg').src = this.dataset.img;
+      modal.style.display = 'flex';
+      document.body.classList.add('modal-open');
+    });
+  });
+
+  document.querySelector('.modal .close').addEventListener('click', function() {
+    document.getElementById('profileModal').style.display = 'none';
+    document.body.classList.remove('modal-open');
+  });
+
+  window.addEventListener('click', function(e) {
+    const modal = document.getElementById('profileModal');
+    if (e.target === modal) {
+      modal.style.display = 'none';
+      document.body.classList.remove('modal-open');
+    }
+  });
