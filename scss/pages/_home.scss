@@ -297,9 +297,10 @@
 .white-header {
     width: 90%;
     padding-top: 40px;
+    padding-bottom: 50px;
     @media (max-width: 1024px) {
         padding-top: 50px;
-        padding-bottom: 10px;
+        padding-bottom: 50px;
     }
     .white-header-text {
         width: 65%;
@@ -313,7 +314,7 @@
         @media (max-width: 1024px) {
             width: 95%;
             padding-top: 50px;
-            padding-bottom: 20px;
+            padding-bottom: 50px;
             font-size: 30px;
             margin: auto;
             
@@ -329,7 +330,7 @@
     }
 }
 .logo-slider {
-    padding-top: 15%;
+    padding-top: 10%!important;
     height: 100px;
     margin:auto;
     justify-items: center;
@@ -338,7 +339,7 @@
     position: relative;
     width:100%;
     @media (max-width: 1024px) {
-        padding-top: 25%;
+        padding-top: 35px;
     }
     .slider {
         animation: scroll 30s linear infinite;
@@ -420,6 +421,9 @@
                     transform-origin: center;
                     transform-origin: center;
                     transition: transform 0.3s ease;
+                    @media (max-width: 1024px) {
+                        top: 135px;
+                    }
                 }
         
                 &:hover::after,
@@ -432,6 +436,7 @@
             border-color:#FFFFFF1A;
             border-width: 1px;
             border-style: solid;
+           
         }
     }
     .total-content {
@@ -986,16 +991,19 @@
         padding-bottom: 30px;
          @media (max-width: 1024px) {
             padding-bottom: 20px;
-            padding-top: 20px;
+            padding-top: 50px;
             font-size: 40px;
         }
+        .text {
+            align-items: center;
+            @media (max-width: 1024px) {
+                justify-self: center;
+                padding-top: 60%;
+                padding-bottom: 30px;
+            }
+        }
     }
-    .text {
-        align-items: center;
-      @media (max-width: 1024px) {
-        justify-self: center;
-      }
-    }
+    
     .contact-form {
         display: none;
         width: 60%;
@@ -1004,6 +1012,7 @@
 
         @media (max-width: 1024px) {
             display: block;
+            padding-top: 40px;
         }
         input {
             width: 100%;
@@ -1019,15 +1028,16 @@
     button{
         display: block;
         font-size: 16px;
-        width: 25%;
-        padding: 10px 20px;
+        width: 17%;
+        height: 44px;
+        padding: 13px 4px!important;
         background : #92CDD3;
         color: #222C57;
         font-family: Avenir-Bold;
         border: none;
         cursor: pointer;
         @media (max-width: 1024px)  {
-            display: none;
+            display: none!important;
         }
         &:hover {
             color:#20294F;
@@ -1044,9 +1054,10 @@
         border: none;
         cursor: pointer;
         @media (max-width: 1024px) {
-            display: block;
+            display: block!important;
             position: relative;
             left: 20px;
+            
         }
         &:hover {
             color:#20294F;

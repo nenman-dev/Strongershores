@@ -147,10 +147,32 @@ document.querySelectorAll('.open-modal').forEach(arrow => {
     document.body.classList.remove('modal-open');
   });
 
-  window.addEventListener('click', function(e) {
+window.addEventListener('click', function(e) {
     const modal = document.getElementById('profileModal');
     if (e.target === modal) {
       modal.style.display = 'none';
       document.body.classList.remove('modal-open');
     }
+})
+
+
+
+
+document.querySelectorAll('.glossary-heading').forEach(button => {
+  button.addEventListener('click', () => {
+    button.classList.toggle('active');
+    const answer = button.nextElementSibling;
+    answer.classList.toggle('show');
   });
+});
+
+
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+
+    tab.classList.add('active');
+    document.getElementById(tab.dataset.range).classList.add('active');
+  });
+});
