@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
     switchTab('coastal');
 });
 
- function myFunction(event) {
+function myFunction(event) {
         event.preventDefault();
         const mobileMenu = document.getElementById("mobileMenu");
         mobileMenu.classList.add("active");
