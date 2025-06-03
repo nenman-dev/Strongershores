@@ -11,9 +11,8 @@
         display: flex;
         width: 90%;
         justify-content: space-between;
-        padding-top: 40px;
         padding-left: 20px;
-        padding-bottom: 50px;
+        height: 7.3rem;
         align-items: center;
         margin: auto;
         @media (max-width: 1024px) {
@@ -29,52 +28,70 @@
             display: flex;
             gap: 25px;
             padding-bottom: 10px;
+            height: 100%;
+            align-items: center;
             @media (max-width: 768px) {
                 display: none;
              }
-            a {
+            .about {
                 color: white;
                 text-decoration: none;
                 font-size: 20px;
+                cursor: pointer;
             }
         
             .dropdown {
                 position: relative;
-
+                height: 100%;
+                align-items: center;
+                display: flex;
+                
+                .dropdown-link,
                 .dropdown-icon {
                     color: white;
                     padding-left: 5px;
+                    text-decoration: none;
+                    cursor: pointer;
+                    font-size: 20px;
                     
                 }
                 .dropdown-content {
-                    display: block;
+                    display: none;
+                    z-index: 999; 
                     position: absolute;
-                    top: 54px;
+                    top: 100%;
+                    left: 0;
+                    margin: 0;
                     background-color: white;
                     color: #222C57;
                     padding: 10px;
-                    width: 120px;
-                    justify-items: left;
+                    width: 150px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
                     
-                    &:hover .dropdown-content {
-                        display: block;
-                    }
+                    
                     li {
+
                         list-style: none;
+                    
 
                         a {
+                            display: block;
                             text-decoration: none;
                             color: #222C57;
-                            padding: 20px 0;
-                            font-size: 20px;
-                            text-align: center;   
+                            padding: 15px 20px;
+                            font-size: 18px;
+                            text-align: left;   
+                            transition: background-color 0.3s ea;
+                           
+                            
                         }
                     } 
-                }
-                .dropdown-link[aria-expanded="true"] + .dropdown-icon + .dropdown-content {
-                    display: block;
-                }                 
-            }                  
+                }     
+                &:hover .dropdown-content{
+                    display: block!important;
+                }      
+            }
+                             
         }
     }
         .mobile-menu,
@@ -107,6 +124,10 @@
             z-index: 9999;
             height: 100vh;
 
+            &.active {
+                display: flex;
+                flex-direction: column;
+            }
             a {
                 display: block;
                 color:#222C57;
@@ -115,10 +136,7 @@
                 text-decoration: none;
                 text-align: center;
             } 
-            &.active {
-                display: flex;
-                flex-direction: column;
-            }
+            
             .logo {
                 width: 100%;
                 background-color: #222C57;
@@ -177,21 +195,26 @@
             
                 }
                 .dropdown-content {
-                    display: flex;
+                    display: none;
+                    position: static;
+                    background-color: white;
                     flex-direction: column;
                     padding-top: 10px;
-               
-
-                    li a {
-                    color: #222C57;
-                    font-size: 18px;
-                    padding: 10px 0;
-                    text-decoration: none;
-                    list-style: none;
-                    }
+                    z-index: 1000;
+                    min-width: 160px;
+                    transition: all 0.3s ease;
 
                     &.show {
                         display: block;
+                    }
+                    li a {
+                        color: #222C57;
+                        font-size: 18px;
+                        padding: 10px 0;
+                        text-decoration: none;
+                        list-style: none;
+
+                       
                     }
                 }
             }
@@ -200,7 +223,7 @@
     hr {
         width: 100%;
         position: relative;
-        bottom: 30px; 
+        bottom: 10px; 
         border-color:rgb(112 109 109 / 10%);
         border-width: 0.5px;
         border-style: solid;

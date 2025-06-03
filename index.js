@@ -1,27 +1,27 @@
 document.querySelectorAll('.dropdown-link').forEach(link => {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
-  
-      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
 
-      document.querySelectorAll('.dropdown-link').forEach(otherLink => {
-        if (otherLink !== link) {
-          otherLink.setAttribute('aria-expanded', 'false');
-           const otherContent = otherLink.nextElementSibling;
-           if (otherContent && otherContent.classList.contains('dropdown-content')) {
-            otherContent.classList.remove('show');
-           }
-        }
-      });
-       this.setAttribute('aria-expanded', String(!isExpanded));
-       const dropdownContent = this.nextElementSibling;
-       if (dropdownContent && dropdownContent.classList.contains('dropdown-content')) {
-            dropdownContent.classList.toggle('show');         
-        }
+    const dropdown = this.closest('.dropdown');
+    const dropdownContent = dropdown.querySelector('.dropdown-content');
+    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+    document.querySelectorAll('.mobile-menu.dropdown').forEach(otherDropdown => {
+      if (otherDropdown !== dropdown) {
+        const otherLink = otherDropdown.querySelector('.dropdown-link');
+        const otherContent = otherDropdown.querySelector('.dropdown-content');
+        if (otherLink) otherLink.setAttribute('aria-expanded', 'false');
+        if (otherContent) otherContent.classList.remove('show');
+      }
+    });
+
+    this.setAttribute('aria-expanded', String(!isExpanded));
+    dropdownContent.classList.toggle('show');
   });
 });
+
 document.addEventListener('click', function (e) {
-    document.querySelectorAll('.dropdown').forEach(dropdown => {
+    document.querySelectorAll('.mobile-menu.dropdown').forEach(dropdown => {
       if (!dropdown.contains(e.target)) {
             const link = dropdown.querySelector('.dropdown-link');
             const content = dropdown.querySelector('.dropdown-content');
@@ -30,6 +30,9 @@ document.addEventListener('click', function (e) {
         }
     });
 });
+
+
+
 
 function openMobileMenu() {
   document.getElementById("mobileMenu").classList.add("active");
