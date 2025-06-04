@@ -39,7 +39,6 @@
                 font-size: 20px;
                 cursor: pointer;
             }
-        
             .dropdown {
                 position: relative;
                 height: 100%;
@@ -53,7 +52,6 @@
                     text-decoration: none;
                     cursor: pointer;
                     font-size: 20px;
-                    
                 }
                 .dropdown-content {
                     display: none;
@@ -68,12 +66,8 @@
                     width: 150px;
                     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
                     
-                    
                     li {
-
                         list-style: none;
-                    
-
                         a {
                             display: block;
                             text-decoration: none;
@@ -81,17 +75,14 @@
                             padding: 15px 20px;
                             font-size: 18px;
                             text-align: left;   
-                            transition: background-color 0.3s ea;
-                           
-                            
+                            transition: background-color 0.3s ease;
                         }
                     } 
                 }     
                 &:hover .dropdown-content{
                     display: block!important;
-                }      
-            }
-                             
+                }          
+            }                   
         }
     }
         .mobile-menu,
@@ -213,12 +204,11 @@
                     }
                 }
                 .dropdown-icon { 
-                    position: relative;
-                    top: 10px;
+                    width: 10px;
                     justify-content: flex-end;
-                    padding-right: 40px;
                     transition: transform 0.3s ease;  
-                    transform-origin: center; 
+                    display: inline-block;
+                    transform-origin: right;
                 }
             }
             .dropdown.open .dropdown-icon {

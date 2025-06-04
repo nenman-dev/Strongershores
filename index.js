@@ -33,15 +33,10 @@ function openMobileMenu() {
   document.getElementById("mobileMenu").classList.add("active");
   document.body.classList.add("menu-open");
 }
-
-
-
 function closeMobileMenu() {
   document.getElementById("mobileMenu").classList.remove("active");
   document.body.classList.remove("menu-open");
 }
-
-
 document.addEventListener("DOMContentLoaded", function () {
     const tabContainer = document.querySelector('.tab-container');
     const buttons = document.querySelectorAll('.mini-heading .btn');
@@ -52,21 +47,16 @@ document.addEventListener("DOMContentLoaded", function () {
         buttons.forEach(btn => {
             btn.classList.toggle('active', btn.dataset.target === targetId);
         });
-
-   
         contents.forEach(content => {
             content.classList.toggle('active', content.id === targetId);
         });
     }
-
     buttons.forEach(button => {
         button.addEventListener('click', function (e) {
             e.preventDefault();
             switchTab(this.dataset.target);
         });
     });
-
-    
     tabContainer?.addEventListener('keydown', (e) => {
         if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
             const currentIndex = Array.from(buttons).findIndex(btn => btn.classList.contains('active'));
@@ -82,8 +72,6 @@ document.addEventListener("DOMContentLoaded", function () {
             buttons[nextIndex].focus();
         }
     });
-
-    
     switchTab('coastal');
 });
 
@@ -96,8 +84,6 @@ function closeMenu() {
         const mobileMenu = document.getElementById("mobileMenu");
         mobileMenu.classList.remove("active");
 }
-
-
 document.addEventListener("DOMContentLoaded", function () {
     const dropdownLinks = document.querySelectorAll(".dropdown-link");
      const mobileMenu = document.getElementById("mobileMenu");
@@ -127,8 +113,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
-
 document.querySelectorAll('.open-modal').forEach(arrow => {
     arrow.addEventListener('click', function(e) {
       e.preventDefault();
@@ -155,9 +139,6 @@ window.addEventListener('click', function(e) {
     }
 })
 
-
-
-
 document.querySelectorAll('.glossary-heading').forEach(button => {
   button.addEventListener('click', () => {
     button.classList.toggle('active');
@@ -165,8 +146,6 @@ document.querySelectorAll('.glossary-heading').forEach(button => {
     answer.classList.toggle('show');
   });
 });
-
-
 document.querySelectorAll('.tab').forEach(tab => {
   tab.addEventListener('click', () => {
     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
