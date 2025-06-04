@@ -1,43 +1,40 @@
-document.querySelectorAll('.dropdown-link').forEach(link => {
-  link.addEventListener('click', function (e) {
-    e.preventDefault();
+document.addEventListener('DOMContentLoaded', function () {
+  const mobileMenu = document.getElementById('mobileMenu');
 
-    const dropdown = this.closest('.dropdown');
-    const dropdownContent = dropdown.querySelector('.dropdown-content');
-    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+ 
+  mobileMenu.addEventListener('click', function (e) {
+    const dropdownLink = e.target.closest('.dropdown');
+    if (dropdownLink) {
+      e.preventDefault();
 
-    document.querySelectorAll('.mobile-menu.dropdown').forEach(otherDropdown => {
-      if (otherDropdown !== dropdown) {
-        const otherLink = otherDropdown.querySelector('.dropdown-link');
-        const otherContent = otherDropdown.querySelector('.dropdown-content');
-        if (otherLink) otherLink.setAttribute('aria-expanded', 'false');
-        if (otherContent) otherContent.classList.remove('show');
+      const dropdown = dropdownLink.closest('.dropdown');
+      if (dropdown) {
+        dropdown.classList.toggle('open');
       }
-    });
 
-    this.setAttribute('aria-expanded', String(!isExpanded));
-    dropdownContent.classList.toggle('show');
+      
+      const allDropdowns = mobileMenu.querySelectorAll('.dropdown');
+      allDropdowns.forEach(d => {
+        if (d !== dropdown) d.classList.remove('open');
+      });
+    }
+  });
+
+  
+  document.addEventListener('click', function (e) {
+    if (!mobileMenu.contains(e.target)) {
+      const openDropdowns = mobileMenu.querySelectorAll('.dropdown.open');
+      openDropdowns.forEach(dropdown => dropdown.classList.remove('open'));
+    }
   });
 });
-
-document.addEventListener('click', function (e) {
-    document.querySelectorAll('.mobile-menu.dropdown').forEach(dropdown => {
-      if (!dropdown.contains(e.target)) {
-            const link = dropdown.querySelector('.dropdown-link');
-            const content = dropdown.querySelector('.dropdown-content');
-            if (link) link.setAttribute('aria-expanded', 'false');
-            if (content) content.classList.remove('show');
-        }
-    });
-});
-
-
-
 
 function openMobileMenu() {
   document.getElementById("mobileMenu").classList.add("active");
   document.body.classList.add("menu-open");
 }
+
+
 
 function closeMobileMenu() {
   document.getElementById("mobileMenu").classList.remove("active");

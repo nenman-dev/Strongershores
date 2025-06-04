@@ -123,100 +123,109 @@
             padding: 0px;
             z-index: 9999;
             height: 100vh;
+            overflow-y: auto;
 
             &.active {
                 display: flex;
                 flex-direction: column;
+                animation: slideInRight 0.3s ease-out;
             }
             a {
                 display: block;
                 color:#222C57;
-                padding: 6px;
+                padding: 10px 30px;
                 font-size: 20px;
                 text-decoration: none;
-                text-align: center;
+                text-align: left;
             } 
             
             .logo {
                 width: 100%;
                 background-color: #222C57;
                 padding: 0;
+                position: relative;
                 margin: 0;
 
                 img {
-                    padding-top: 50px;
+                    padding-top: 30px;
                     padding-left: 30px;
                     padding-bottom: 30px;
+                    max-width: calc(100% - 60px); 
                 }
             }
 
             .close-icon {
                 position: absolute;
-                width: 20%;
-                top: 50px;
-                right:10%; 
+                top: 30px;
+                right:5%; 
                 text-align: right;
                 font-size: 30px;
                 color: white;
                 background-color: #222C57;
                 cursor: pointer;
                 z-index: 10000;
+                padding: 10px;
             }
             .menu-bar {
                 padding-top: 40px;
                 width: 100%;
-                a {
+                flex: 1;
+                .about {
                     font-family: Avenir-Medium;
                     text-align: left;
                     padding-left: 30px;
                 }
-            }
-            
-            .dropdown {
-                width: 90%;
-                text-align: center;
-                display: inline-block;
-                position: relative;
-                justify-content: space-between;
-                align-items: center;
-               
-
-                .dropdown-link {
-                    flex: 1;
-                    text-align: left;
-                    padding-left: 30px;
-                }
-                
-                .dropdown-icon {
-                    position: relative;
-                    bottom: 30px;
+                .main-dropdown {
                     display: flex;
-                    justify-content: end;
-            
-                }
-                .dropdown-content {
-                    display: none;
-                    position: static;
-                    background-color: white;
-                    flex-direction: column;
-                    padding-top: 10px;
-                    z-index: 1000;
-                    min-width: 160px;
-                    transition: all 0.3s ease;
-
-                    &.show {
+               
+                    .dropdown {
+                        width: 100%;
                         display: block;
-                    }
-                    li a {
-                        color: #222C57;
-                        font-size: 18px;
-                        padding: 10px 0;
-                        text-decoration: none;
-                        list-style: none;
+                        position: relative;
+                        cursor: pointer;
+                        justify-content: space-between;
+                    
+                        .dropdown-link {
+                            display: flex;
+                            font-family: Avenir-Medium;
+                            justify-content: space-between;
+                            align-items: center;
+                            cursor: pointer;
 
-                       
+                        }
+                    }
+                    .dropdown-content {
+                        display: none;
+                        flex-direction: column;
+                        padding: 0;
+                        margin: 0;
+                        list-style: none;
+                        
+
+                        li a {
+                            color: #222C57;
+                            font-size: 18px;
+                            padding: 10px ;
+                            font-family: Avenir-Medium;
+                            padding-left: 50px;
+                            text-decoration: none;  
+                        }
                     }
                 }
+                .dropdown-icon { 
+                    position: relative;
+                    top: 10px;
+                    justify-content: flex-end;
+                    padding-right: 40px;
+                    transition: transform 0.3s ease;  
+                    transform-origin: center; 
+                }
+            }
+            .dropdown.open .dropdown-icon {
+                transform: rotate(180deg);
+            }
+            .dropdown.open .dropdown-content {
+                display: flex!important;
             }
         }
     }
