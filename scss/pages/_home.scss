@@ -562,9 +562,9 @@
         .fresh-content,
         .marine-content{
             display:none;
-            width: 80%;
+            width: 85%;
             margin: auto;
-            gap: 100px;
+            gap: 30px;
             padding-top: 50px;
             @media (max-width: 1024px) {
                 gap: 0;
@@ -576,7 +576,7 @@
                 width: 35%;
                 color: white;
                 position: relative;
-                left: 50px;
+                left: 20px;
                 padding-top: 30px;
                 text-align: left;
                 @media (max-width: 1024px) {
@@ -602,12 +602,8 @@
                 .marine-text, p {
                     font-family: Avenir-Regular;
                     line-height: 1.5em;
-                    font-size: 25px;
+                    font-size: 18px;
                     padding-bottom: 15px;
-                    @media (max-width: 1024px) {
-                        font-size: 18px;
-                        
-                    }
                 }
                 .coastal-text,
                 .fresh-text,
@@ -642,23 +638,24 @@
                 position: relative;
                 left: 30px;
                 @media (max-width: 1024px) {
-                    margin:0;
+                    margin: auto;
                     width: 95%;
                     left:0;
+                    text-align: -webkit-center;
                     
                 }
                 img {
                     width: 617px;
-                    height: 392px;
+                    height: 492px;
                     @media (max-width: 1024px) {
-                        width: 100%;
-                        height: auto;
+                        
+                        width: 375px;
+                        height: 217px;
+                        
                     }
-                }
-            
+                } 
             }
-        }  
-        
+        }      
     }
 }
 .home-white {
@@ -1145,95 +1142,91 @@
         padding-bottom: 50px;
     }
    
-    .top-footer-section .text {
-        width: 70%;
-        height: 100px;
-        display: flex;
-        gap: 10px;
-        color: white;
-        font-size: 30px;
-        margin: auto;
-        padding-top: 30px;
-        padding-bottom: 30px;
-         @media (max-width: 1024px) {
-            padding-bottom: 20px;
-            padding-top: 50px;
-            font-size: 40px;
-        }
+    .top-footer-section {
         .text {
-            align-items: center;
+            width: 70%;
+            height: 100px;
+            display: flex;
+            gap: 10px;
+            color: white;
+            font-size: 36px;
+            margin: auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
             @media (max-width: 1024px) {
-                justify-self: center;
-                padding-top: 60%;
                 padding-bottom: 30px;
+                padding-top: 50px;
+                font-size: 30px;
             }
+        } 
+        .contact-form {
+            display: none;
+            width: 60%;
+            padding-left: 20px;
+            background-color: #20294F;
+
+            @media (max-width: 1024px) {
+                display: block;
+                padding-top: 10px;
+            }
+            input {
+                width: 100%;
+                padding: 10px;
+                font-family: Avenir-Regular;
+                margin-bottom: 1.2rem;
+                font-size: 2rem;
+                &::placeholder {
+                    color: #888;
+                    font-size: 16px;
+                }
+            }   
         }
-    }
-
-    .contact-form {
-        display: none;
-        width: 60%;
-        padding-left: 20px;
-        background-color: #20294F;
-
-        @media (max-width: 1024px) {
+        button{
             display: block;
-            padding-top: 40px;
-        }
-        input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 1.2rem;
-            font-size: 2rem;
-            &::placeholder {
-                color: #888;
-                font-size: 18px;
+            font-size: 15.6px;
+            width: 20%;
+            height: 44px;
+            padding: 13px 4px!important;
+            background : #92CDD3;
+            color: #222C57;
+            font-family: Avenir-Bold;
+            border: none;
+            cursor: pointer;
+            
+            @media (max-width: 1024px)  {
+                width: 35%;
+            }
+            @media (max-width: 768px)  {
+                display: none!important;
+            }
+            &:hover {
+                color:#20294F;
+                background-color: #F3F7FA;
             }
         }
+        .one{
+            display: none;
+            font-size: 15.6px;
+            padding: 10px;
+            background : #92CDD3;
+            color: #222C57;
+            font-family: Avenir-Bold;
+            border: none;
+            cursor: pointer;
+            @media (max-width: 768px) {
+                display: block!important;
+                position: relative;
+                left: 20px;
+                width: 29%;
+            }
+            &:hover {
+                color:#20294F;
+                background-color: #F3F7FA;
+            }
+        }
+   
     }
-    button{
-        display: block;
-        font-size: 15.6px;
-        width: 17%;
-        height: 44px;
-        padding: 13px 4px!important;
-        background : #92CDD3;
-        color: #222C57;
-        font-family: Avenir-Bold;
-        border: none;
-        cursor: pointer;
-        
-        @media (max-width: 1024px)  {
-            width: 35%;
-        }
-        @media (max-width: 768px)  {
-            display: none!important;
-        }
-        &:hover {
-            color:#20294F;
-            background-color: #F3F7FA;
-        }
-    }
-    .one{
-        display: none;
-        font-size: 15.6px;
-        padding: 10px;
-        background : #92CDD3;
-        color: #222C57;
-        font-family: Avenir-Bold;
-        border: none;
-        cursor: pointer;
-        @media (max-width: 768px) {
-            display: block!important;
-            position: relative;
-            left: 20px;
-            width: 23%;
-        }
-        &:hover {
-            color:#20294F;
-            background-color: #F3F7FA;
-        }
-    }
+    
 }
      
 .footer {
@@ -1247,23 +1240,27 @@
         padding-left: 6%;
         padding-top: 50px;
         justify-content: space-between;
-        gap: 20px;
+        gap: 5px;
         color: white;
         font-family: Avenir-Regular;
-         @media (max-width: 1024px) {
+        
+        @media (max-width: 1024px) {
             flex-direction: column;
-         }
+        }
 
         .logo img {
             width: 58px;
             height: 58px;
         }
+        
         .first {
-            width: 12%;
+            width: 27%;
             
             @media (max-width: 1024px) {
-                width: 25%;
+                width: 70%;
             }
+            
+            
             a {
                 display: flex;
                 flex-direction: column;
@@ -1271,7 +1268,7 @@
                 color: white;
                 text-decoration: none;
                 line-height: 2em;
-               
+                width: 50%;
                 &:hover {
                     color: #1B5AA5;
                 }
@@ -1280,7 +1277,7 @@
         .second {
             width: 15%;
             @media (max-width: 1024px) {
-                width: 32%;
+                width: 71%;
             }
 
             a {
